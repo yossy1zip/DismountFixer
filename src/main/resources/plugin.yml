@@ -5,4 +5,4 @@ api-version: 1.16
 prefix: DismountFixer
 authors: [ yossy_zip ]
 description: Fix illegal behaviours when you get off the entity.
-depend: [ProtocolLib]
+soft-depend: [WorldGuard,Vehicles]
