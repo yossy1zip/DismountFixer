@@ -6,7 +6,7 @@
 
     <groupId>com.yiorno</groupId>
     <artifactId>DismountFixer</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <name>DismountFixer</name>
@@ -63,14 +63,6 @@
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
         <repository>
-            <id>dmulloy2-repo</id>
-            <url>https://repo.dmulloy2.net/repository/public/</url>
-        </repository>
-        <repository>
-            <id>MG-Dev Jenkins CI Maven Repository</id>
-            <url>https://ci.mg-dev.eu/plugin/repository/everything</url>
-        </repository>
-        <repository>
             <id>sk89q-repo</id>
             <url>https://maven.enginehub.org/repo/</url>
         </repository>
@@ -91,15 +83,11 @@
             <systemPath>${basedir}/lib/Vehicles(11.0)-API.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.comphenix.protocol</groupId>
-            <artifactId>ProtocolLib</artifactId>
-            <version>4.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.bergerkiller.bukkit</groupId>
-            <artifactId>BKCommonLib</artifactId>
-            <version>1.16.4-v3-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>de.netzkronehd.WGRegionEvents</groupId>
+            <artifactId>WGRegionEvents</artifactId>
+            <scope>system</scope>
+            <version>1.2</version>
+            <systemPath>${basedir}/lib/WGRegionEvents1.16.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
