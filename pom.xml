@@ -6,14 +6,14 @@
 
     <groupId>com.yiorno</groupId>
     <artifactId>DismountFixer</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
 
     <name>DismountFixer</name>
 
     <description>Fix illegal behaviours when you get off the entity.</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>16</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -55,7 +55,7 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
@@ -70,17 +70,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>es.pollitoyeye.vehicles</groupId>
             <artifactId>Vehicles</artifactId>
             <scope>system</scope>
-            <version>11.0</version>
-            <systemPath>${basedir}/lib/Vehicles(11.0)-API.jar</systemPath>
+            <version>12.91</version>
+            <systemPath>${basedir}/lib/Vehicles(12.91).jar</systemPath>
         </dependency>
         <dependency>
             <groupId>de.netzkronehd.WGRegionEvents</groupId>
@@ -91,8 +85,9 @@
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <artifactId>spigot-api</artifactId>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.sk89q.worldguard</groupId>
