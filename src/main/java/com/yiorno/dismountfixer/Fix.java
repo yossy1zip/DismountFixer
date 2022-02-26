@@ -17,11 +17,11 @@ public class Fix {
 
         Location playerLoc = player.getLocation();
         Location entityLoc = entity.getLocation();
-        Float playerYaw = player.getLocation().getYaw();
-        Float playerPitch = player.getLocation().getPitch();
+        float playerYaw = player.getLocation().getYaw();
+        float playerPitch = player.getLocation().getPitch();
         Block block = playerLoc.getBlock();
-        Boolean doFixPane = false;
-        Boolean doFixBlock = false;
+        boolean doFixPane = false;
+        boolean doFixBlock = false;
 
         //人に乗っていた場合
         if(entity instanceof Player) {
@@ -70,7 +70,7 @@ public class Fix {
                 }
             }
 
-            if(doFixPane == false) {
+            if(!doFixPane) {
                 LOOP_I:
                 for (int z = -1; z <= 1; z++) {
                     for (int x = -1; x <= 1; x++) {
@@ -84,11 +84,11 @@ public class Fix {
                 }
             }
 
-            if((doFixPane == false) && (doFixBlock == false)){
+            if((!doFixPane) && (!doFixBlock)){
                 return;
             }
 
-            if(!(entity instanceof Vehicle) && !(entity instanceof Vehicle)) {
+            if(!(entity instanceof Vehicle)) {
 
                 Location nloc = null;
 
@@ -105,11 +105,11 @@ public class Fix {
                 int locyp = (int) playerLoc.getBlockY();
                 int loczp = (int) Math.round(loczpd);
 
-                if(doFixPane == true){
+                if(doFixPane){
                     nloc = new Location(entityWorld, locx, locy, locz);
                 }
 
-                if(doFixBlock == true){
+                if(doFixBlock){
                     nloc = new Location(entityWorld, locx+0.5, locy, locz+0.5);
                 }
 
@@ -141,8 +141,8 @@ public class Fix {
 
             Location loc = player.getLocation();
             Block block = loc.getBlock();
-            Boolean doFixPane = false;
-            Boolean doFixBlock = false;
+            boolean doFixPane = false;
+            boolean doFixBlock = false;
 
             LOOP_I:
             for(int z = -1; z <= 1; z++) {
@@ -156,7 +156,7 @@ public class Fix {
                 }
             }
 
-            if(doFixPane == false) {
+            if(!doFixPane) {
 
                 LOOP_I:
                 for (int z = -1; z <= 1; z++) {
@@ -173,7 +173,7 @@ public class Fix {
             }
 
 
-            if ((doFixPane == false) && (doFixBlock == false))  {
+            if ((!doFixPane) && (!doFixBlock))  {
 
                 return;
 
@@ -197,15 +197,15 @@ public class Fix {
                 int loczp = (int) entityLoc.getBlockZ();
 
 
-                if(doFixPane == true){
+                if(doFixPane){
                     nloc = new Location(entityWorld, locx, locy, locz);
                 }
 
-                if(doFixBlock == true){
+                if(doFixBlock){
                     nloc = new Location(entityWorld, locxp+0.5, locy, loczp+0.5);
                 }
 
-                if((doFixPane == true) && (doFixBlock == true)){
+                if((doFixPane) && (doFixBlock)){
                     nloc = new Location(entityWorld, locx+0.5, locy, locz+0.5);
                 }
 

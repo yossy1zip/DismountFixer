@@ -4,4 +4,5 @@ main: com.yiorno.dismountfixer.DismountFixer
 prefix: DismountFixer
 authors: [ yossy_zip ]
 description: Fix illegal behaviours when you get off the entity.
-soft-depend: [WorldGuard,Vehicles,WGRegionEvents]
+depend: [WorldGuard,Vehicles,WGRegionEvents]
+api-version: 1.17

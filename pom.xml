@@ -77,11 +77,11 @@
             <systemPath>${basedir}/lib/Vehicles(12.91).jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>de.netzkronehd.WGRegionEvents</groupId>
+            <groupId>com.mewin.WGRegionEvents</groupId>
             <artifactId>WGRegionEvents</artifactId>
             <scope>system</scope>
-            <version>1.2</version>
-            <systemPath>${basedir}/lib/WGRegionEvents1.16.4.jar</systemPath>
+            <version>1.2.1</version>
+            <systemPath>${basedir}/lib/WGRegionEvents-1.2.1.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -92,7 +92,7 @@
         <dependency>
             <groupId>com.sk89q.worldguard</groupId>
             <artifactId>worldguard-bukkit</artifactId>
-            <version>7.0.5-SNAPSHOT</version>
+            <version>7.0.6</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
